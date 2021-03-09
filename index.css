@@ -359,7 +359,7 @@ main li {
 
 #projects .projects .project {
     margin: 20px 0;
-    padding: 20px;
+    padding: 40px;
     -webkit-box-shadow: 5px 5px 0px 0px var(--highlight-color);
     -moz-box-shadow: 5px 5px 0px 0px var(--highlight-color);
     box-shadow: 5px 5px 0px 0px var(--highlight-color);
@@ -380,6 +380,12 @@ main li {
     font-size: 25px;
     border-bottom: 2.5px solid var(--highlight-color);
     padding-bottom: 5px;
+}
+
+#projects .projects .project h4 {
+    border-left: 2.5px solid var(--highlight-color);
+    font-size: 20px;
+    padding-left: 10px;
 }
 
 .project-link {
