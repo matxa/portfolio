@@ -186,7 +186,7 @@ header .card .menu .menu-item a {
     justify-content: center;
 }
 
-header .card .social-menu {
+.social-menu {
     width: 100%;
     display: flex;
     align-items: center;
@@ -194,7 +194,7 @@ header .card .social-menu {
     margin-top: 10px;
 }
 
-header .card .social-menu .social-menu-item {
+.social-menu .social-menu-item {
     border: 1px solid var(--text-color);
     height: 40px;
     width: 40px;
@@ -209,27 +209,27 @@ svg {
     width: 20px;
 }
 
-header .card .social-menu .social-menu-item:nth-child(1) svg {
+.social-menu .social-menu-item:nth-child(1) svg {
     color: var(--highlight-color);
 }
 
-header .card .social-menu .social-menu-item:nth-child(2) svg {
+.social-menu .social-menu-item:nth-child(2) svg {
     color: var(--mark);
 }
 
-header .card .social-menu .social-menu-item:nth-child(3) svg {
+.social-menu .social-menu-item:nth-child(3) svg {
     color: var(--text-color);
 }
 
-header .card .social-menu .social-menu-item:nth-child(1) {
+.social-menu .social-menu-item:nth-child(1) {
     border-color: var(--highlight-color);
 }
 
-header .card .social-menu .social-menu-item:nth-child(2) {
+.social-menu .social-menu-item:nth-child(2) {
     border-color: var(--mark);
 }
 
-header .card .social-menu .social-menu-item:nth-child(3) {
+.social-menu .social-menu-item:nth-child(3) {
     border-color: var(--text-color);
 }
 
@@ -290,8 +290,11 @@ main {
     padding-bottom: 150px;
 }
 
+
+/* ABOUT SECTION */
 section {
     height: 100%;
+    max-width: 700px;
     margin: 0 50px;
 }
 
@@ -301,7 +304,7 @@ section h2 {
     line-height: 70px;
 }
 
-#about p {
+main p {
     font-size: 20px;
 }
 
@@ -341,4 +344,41 @@ main li {
     margin: 10px 0;
     width: 100%;
     font-size: 18px;
+}
+
+/* PROJETS SECTION */
+#projects .projects {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#projects .projects .project {
+    margin: 20px 0;
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 0px 0px var(--highlight-color);
+    -moz-box-shadow: 5px 5px 0px 0px var(--highlight-color);
+    box-shadow: 5px 5px 0px 0px var(--highlight-color);
+    border: 1px solid var(--text-color);
+}
+
+#projects .projects .project h3 {
+    border-bottom: 2.5px solid var(--highlight-color);
+    padding-bottom: 5px;
+}
+
+.project-link {
+    padding: unset;
+    margin: unset;
+    min-width: unset;
+    max-width: unset;
+    justify-content: flex-start;
+}
+
+.project-link .social-menu-item {
+    margin-right: 20px;
 }
