@@ -146,7 +146,7 @@ header .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 header .card .picture {
@@ -168,7 +168,6 @@ header .card .menu .menu-item {
     width: 200px;
     height: 40px;
     color: var(--text-color);
-    outline: 1px solid var(--text-color);
     margin: 10px 0;
     display: flex;
     align-items: center;
@@ -195,13 +194,12 @@ header .card .menu .menu-item a {
 }
 
 .social-menu .social-menu-item {
-    border: 1px solid var(--text-color);
     height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px solid;
+    border-bottom: 2.5px solid;
 }
 
 svg {
@@ -315,7 +313,6 @@ section .word-to-underline .underline {
     max-height: 5px;
     text-align: left;
     padding: 0 15px;
-    outline: 1px solid var(--mark);
     border-bottom: 5px solid var(--highlight-color);
     margin-bottom: -200px;
 }
@@ -327,6 +324,9 @@ section .word-to-underline .underline {
 
 .skills {
     margin-top: 50px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
+    border-bottom: 2.5px solid var(--text-color);
 }
 
 .skills h3 .underline {
@@ -350,7 +350,7 @@ main li {
 #projects .projects {
     width: 100%;
     height: 100%;
-    padding: 50px 0;
+    padding: 25px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -360,10 +360,7 @@ main li {
 #projects .projects .project {
     margin: 20px 0;
     padding: 40px;
-    -webkit-box-shadow: 5px 5px 0px 0px var(--highlight-color);
-    -moz-box-shadow: 5px 5px 0px 0px var(--highlight-color);
-    box-shadow: 5px 5px 0px 0px var(--highlight-color);
-    border: 1px solid var(--text-color);
+    border-bottom: 5px solid var(--highlight-color);
 }
 
 #projects .projects .project .des {
@@ -398,4 +395,13 @@ main li {
 
 .project-link .social-menu-item {
     margin-right: 20px;
+}
+
+#photo {
+    width: 100%;
+}
+
+.about .about-me {
+    margin-top: 20px;
+    border-bottom: 2.5px solid var(--text-color);
 }
